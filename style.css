@@ -9,8 +9,10 @@
   
   body{
   	background: rgb(30,148,149);
-	background: linear-gradient(17deg, rgba(30,148,149,1) 0%, rgba(253,209,45,1) 100%);
-  }
+	/* background: linear-gradient(17deg, rgba(30,148,149,1) 0%, rgba(253,209,45,1) 100%); */
+    /* background: radial-gradient(circle, rgba(253,209,45,1) 0%, rgba(30,148,149,1) 100%); */
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(239, 241, 241) 100%);
+}
   
   .row {
     display: flex;
@@ -19,13 +21,14 @@
     width: 100vw;
   }
 
-  .card {
+  /* .card {
     width: 19.3%;
     height: 150px;
     background-color: white;
     border-radius: 10px;
 	padding: 10px;
-  }
+    box-shadow: 0px 5px 20px 0px #e9e7e7;
+  } */
 
   .box {
     width: 40.2%;
@@ -34,6 +37,8 @@
     margin: 10px;
     border-radius: 10px;
 	padding: 10px;
+    box-shadow: 0px 5px 20px 0px #e9e7e7;
+
   }
 
   .large-box {
@@ -43,6 +48,8 @@
     margin: 10px;
     border-radius: 10px;
 	padding: 10px;
+    box-shadow: 0px 5px 20px 0px #e9e7e7;
+
   }
 
   .margin-top {
@@ -68,3 +75,81 @@
   #QV01, #QV03 {
 	height: 350px;
 }
+
+.container {
+	position: relative;
+	white-space: nowrap;
+	overflow-x: hidden;
+	height: (1.2 * 12em);
+	width: 41.5em;
+	top: 50vh;
+	margin: auto;
+	transform: translateY((-0.6 * 12em));
+}
+.inner {
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+.card {
+    width: 20%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+	padding: 10px;
+
+	font-family: sans-serif;
+	line-height: 12em;
+	/* width: 8em; */
+	/* height: 12em; */
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 0 20px 4px rgba(241, 241, 241, 0.4);
+	display: inline-block;
+	margin: 0 0.5em;
+	position: relative;
+	bottom: -1.2em;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+	&:hover {
+		background: #E2E2E2;
+		box-shadow: 0 0 20px 8px rgba(240, 239, 239, 0.4);
+	}
+}
+
+.card[data-scale="0"],
+.card[data-scale="4"] {
+	transform: scale(1);
+	z-index: 0;
+}
+.card[data-scale="1"],
+.card[data-scale="3"] {
+	transform: scale(1.1);
+	z-index: 1;
+}
+.card[data-scale="2"] {
+	transform: scale(1.2);
+	z-index: 2;
+}
+
+/* .btn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background: rgba(255,255,255,0.1);
+	padding: 0 2em;
+	line-height: 100vh;
+	transition: background 0.3s ease;
+	svg {
+		fill: white;
+		width: 3em;
+		height: 3em;
+	}
+	&.next {
+		right: 0;
+	}
+	&.prev {
+		left: 0;
+	}
+	&:hover {
+		background: rgba(255,255,255,0.2);
+	}
+} */
