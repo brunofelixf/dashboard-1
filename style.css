@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+	border: none;
+  }
+  
+  .container {
+  }
+  
+  body{
+  	background: rgb(30,148,149);
+	background: linear-gradient(17deg, rgba(30,148,149,1) 0%, rgba(253,209,45,1) 100%);
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .card {
+    width: 19.3%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+	padding: 10px;
+  }
+
+  .box {
+    width: 40.2%;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+	padding: 10px;
+  }
+
+  .large-box {
+    width: 82%;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+	padding: 10px;
+  }
+
+  .margin-top {
+    margin-top: 100px;
+  }
+
+  .margin-20{
+    margin: 20px;
+  }
+
+  .margin-left{
+    margin-left: 20px;
+  }
+
+  .margin-right{
+    margin-right: 20px;
+  }
+	
+  qvobject {
+  	padding: 20px;
+  }
+  
+  #QV01, #QV03 {
+	height: 350px;
+}
