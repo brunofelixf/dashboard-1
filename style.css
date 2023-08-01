@@ -7,9 +7,6 @@
 	border: none;
   }
   
-  .container {
-  }
-  
   body{
   	background: rgb(30,148,149);
 	background: linear-gradient(17deg, rgba(30,148,149,1) 0%, rgba(253,209,45,1) 100%);
