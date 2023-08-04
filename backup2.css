@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+	border: none;
+  }
+  
+  .container {
+  }
+  
+  body{
+  	background: rgb(30,148,149);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 100%);
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .card {
+    width: 19.3%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0px 5px 20px 0px #e9e7e7;
+  }
+
+  .box {
+    width: 40.2%;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0px 5px 20px 0px #e9e7e7;
+  }
+
+  .large-box {
+    width: 82%;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0px 5px 20px 0px #e9e7e7;
+  }
+
+  .margin-top {
+    margin-top: 100px;
+  }
+
+  .margin-20{
+    margin: 20px;
+  }
+
+  .margin-left{
+    margin-left: 20px;
+  }
+
+  .margin-right{
+    margin-right: 20px;
+  }
+	
+  qvobject {
+  	padding: 20px;
+  }
+  
+  #QV01, #QV03 {
+	height: 350px;
+}
+
+.container {
+	position: relative;
+	white-space: nowrap;
+	overflow-x: hidden;
+	height: (1.2 * 12em);
+	width: 41.5em;
+	top: 50vh;
+	margin: auto;
+	transform: translateY((-0.6 * 12em));
+}
+.inner {
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+.card {
+    width: 18%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+	padding: 10px;
+
+	font-family: sans-serif;
+	line-height: 12em;
+	/* width: 8em; */
+	/* height: 12em; */
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 0 20px 4px rgba(241, 241, 241, 0.4);
+	display: inline-block;
+	margin: 0 1em;
+	position: relative;
+	bottom: -1.2em;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+	&:hover {
+		background: #E2E2E2;
+		box-shadow: 0 0 20px 8px rgba(240, 239, 239, 0.4);
+	}
+}
+
+.card[data-scale="0"],
+.card[data-scale="4"] {
+	transform: scale(1);
+	z-index: 0;
+}
+.card[data-scale="1"],
+.card[data-scale="3"] {
+	transform: scale(1.1);
+	z-index: 1;
+}
+.card[data-scale="2"] {
+	transform: scale(1.2);
+	z-index: 2;
+}
+
+.carousel {
+    padding: 30px;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel__container {
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0px auto;
+    white-space: nowrap;
+  }
+  
+  .carousel--item {
+    display: inline-block;
+    position: relative;
+    margin: 80px 8px 0px 8px;
+    width: 21%;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(215, 218, 219);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 350ms all;
+    transform-origin: center left;
+    box-shadow: 0px 5px 20px 0px #dfdddd;
+  }
+  
+  .carousel--item-2 {
+    display: inline-block;
+    position: relative;
+    margin: 10px 8px 0px 8px;
+    width: 43%;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 350ms all;
+    transform-origin: center left;
+    box-shadow: 0px 5px 20px 0px #dfdddd;
+	padding: 15px;
+  }
+  
+  .carousel--item:hover ~ .carousel--item {
+    transform: translate3d(100px, 0, 0);
+  }
+  .carousel__container:hover .carousel--item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel--item:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+  
+  .carousel--item:hover .carousel--item__details {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  .carousel--item-2:hover ~ .carousel--item-2 {
+    transform: translate3d(100px, 0, 0);
+  }
+  .carousel__container:hover .carousel--item-2 {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel--item-2:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+  
+  .carousel--item-2:hover .carousel--item__details {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  .carousel--item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .carousel--item__details {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    background: linear-gradient(83deg, rgba(138, 137, 137, 0.8) 0%, rgba(223, 221, 220, 0.1) 100%);
+    opacity: 0;
+    transition: 350ms opacity;
+  }
+  .carousel--item__details img {
+    margin: 0 5px;
+    width: 20px;
+  }
+  
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
